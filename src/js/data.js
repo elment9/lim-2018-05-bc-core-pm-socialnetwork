@@ -260,10 +260,14 @@ const showPostsUserProfile = (newPostsUser) => {
   author.setAttribute('style', "margin-top: 22px");
 
 
-  const textPost = document.createElement('p');
-  textPost.setAttribute('class', "w3-left w3-circle w3-margin-right");
-  textPost.setAttribute('id', postskey);
-  textPost.innerHTML = `${newPostsUser.val().body}`;
+  const textPost = document.createElement('input');
+ textPost.setAttribute('type', 'text');
+ /* textPost.setAttribute('class', "w3-left w3-circle w3-margin-right"); */
+ textPost.setAttribute('id', postskey);
+ /* textPost = document.getElementById("postskey"); */
+/*   textPost.setAttribute('onfocus', editFocus(textPost)); */
+ textPost.innerHTML = `${newPostsUser.val().body}`;
+
 
   const lineBreak = document.createElement('br');
   lineBreak.setAttribute('class', "w3-clear");
