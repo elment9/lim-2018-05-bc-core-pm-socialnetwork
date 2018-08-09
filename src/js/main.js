@@ -103,7 +103,3 @@ sendPostButton.addEventListener('click', writtingPost);
 
 feedButton.addEventListener('click', showFeed);
 profileButton.addEventListener('click', myProfile);
-
-
-
-

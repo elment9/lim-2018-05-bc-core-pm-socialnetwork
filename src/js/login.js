@@ -4,10 +4,6 @@
 const callModalRegister = document.getElementById('call-modal-register');
 const callModalLogin = document.getElementById('call-modal-login');
 
-//Llamando modal NAVBAR
-const callModalRegisterNavbar = document.getElementById('navbar-call-modal-register');
-const callModalLoginNavbar = document.getElementById('navbar-call-modal-login');
-
 //Login modal botones
 const cancelButton = document.getElementById('cancel-button');
 const xButton = document.getElementById('x-button');
@@ -67,16 +63,10 @@ callModalLogin.addEventListener('click', showModal);
 cancelButton.addEventListener('click', dontShowModal);
 xButton.addEventListener('click', xButtonClose);
 
-// Modal login navbar
-callModalLoginNavbar.addEventListener('click', showModal);
-
 //Modal register 
 callModalRegister.addEventListener('click', showModalRegister);
 cancelRegButton.addEventListener('click', dontShowModalRegister);
 xRegButton.addEventListener('click', xButtonCloseRegister);
-
-// Modal register navbar
-callModalRegisterNavbar.addEventListener('click', showModalRegister);
 
 //Register
 registerButton.addEventListener('click', registerWithFirebase);
