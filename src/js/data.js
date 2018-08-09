@@ -137,9 +137,6 @@ const logoutWithFirebase = () => {
       console.log('Error Firebase > código > ' + error.code); 
       console.log('Error Firebase > Mensaje > ' + error.message); 
     });
-    publicContainer.style.display = 'none';
-    privateContainer.style.display = 'none';
-    addBanner.style.display = 'block'; 
 };
 
 //TIMELINE
